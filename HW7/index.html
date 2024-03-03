@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <input type='number' id="firstNumber" />
+<input type='number' id="secondNumber" />
+<div id="divisionResult">
+    текст у div
+</div>
+<script>
+    const calcResult = () => {
+        console.log(firstNumber.value, secondNumber.value, divisionResult.innerHTML)
+        divisionResult.innerHTML = firstNumber.value/secondNumber.value
+    }
+    
+    firstNumber.oninput = secondNumber.oninput = calcResult
+</script>
+    
+<input type='number' id="liters" />
+<input type='number' id="fuelPrice" />
+<div id="result">
+    Витрати на паливо
+</div>
+<script>
+    const fuelCosts = () => {
+        console.log(liters.value, fuelPrice.value, result.innerHTML)
+        result.innerHTML = liters.value*fuelPrice.value
+    }
+    
+    liters.oninput = fuelPrice.oninput = fuelCosts
+</script>
+</body>
+</html>
