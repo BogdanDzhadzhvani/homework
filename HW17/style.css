@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+.traffic-light {
+    width: 100px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.red {
+    background-color: grey;
+}
+
+.yellow {
+    background-color: grey;
+}
+
+.green {
+    background-color: gray;
+}
+
+#timer {
+    font-size: 24px;
+    color: white;
+}
